@@ -12,11 +12,13 @@
   // }
 
   type Gender = "M" | "F";
+  
   interface PersonProperties {
     birthday: Date;
     gender  : Gender;
     name    : string;
   }
+  
   class Person {
     public birthday: Date;
     public gender  : Gender;
@@ -101,7 +103,7 @@
   );
   console.log({ newUserSettings });
 
-  
+
 
 
 })();
