@@ -1,6 +1,7 @@
 import './style.css'
 //import './clean-code/07-homework'
-import './solid/1-srp'
+//*import './solid/01-srp'
+import './solid/02-open-close-a'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 

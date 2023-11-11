@@ -6,7 +6,7 @@
     }
 
     class ProductService{
-        //It has a Single Responsibility because it manage only products (get, save, delete, update)
+        //It has a Single Responsibility because it manage only products logic (get, save, delete, update)
         getProduct(id: number){
             console.log('Producto: ',{ id, name: 'OLED Tv' });
         }   
@@ -26,14 +26,17 @@
     }
 
     class CartService{
-        //It has Single Responsibility  because it manage only cart products
+        //It has Single Responsibility  because it manage only cart logic
+        private itemsInCart:Object[]=[];
+
         addProductId(productId:number){
             console.log('Agregando al carrito ', productId );
+            this.itemsInCart.push(productId);
         }
     }
         
     class CartBloc{
-        //It has Single Responsibility because it manage only Bloc Logic Component about Cart
+        //It has Single Responsibility because it manage only Bloc Logic Component about Cart process
         private cartService:CartService;
 
         constructor(cartService:CartService){
@@ -50,7 +53,7 @@
     // Usualmente, esto es una clase para controlar la vista que es desplegada al usuario
     // Recuerden que podemos tener muchas vistas que realicen este mismo trabajo.
     class ProductBloc {
-        //It has Single Responsibility because it manage only Bloc Logic Component about Product
+        //It has Single Responsibility because it manage only Bloc Logic Component about Product`process
         private productService:ProductService;
         private mailerService:MailerService;
 
