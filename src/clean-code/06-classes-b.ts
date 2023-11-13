@@ -108,3 +108,23 @@
 
 
 })();
+
+
+
+
+// const newUserSettings = new UserSettings(
+//   {
+//     workingDirectory: "/usr/home",
+//     lastOpenFolder  : "/home",
+//     name            : "Juan",
+//     gender          : "M",
+//     birthday        : new Date("1985-01-15"),
+//     email           : "mi@correo.com",
+//     role            : "administrador"
+//   }
+// );
+// console.log({ newUserSettings });
+
+
+
+
